@@ -1,14 +1,23 @@
 {
   "version": 2,
-  "functions": {
-    "api-tinvest.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "rewrites": [
+  "builds": [
     {
-      "source": "/api/tinvest",
-      "destination": "/api-tinvest.js"
+      "src": "api-tinvest.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/tinvest",
+      "dest": "/api-tinvest.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
