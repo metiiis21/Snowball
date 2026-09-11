@@ -1,4 +1,14 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "version": 2,
+  "functions": {
+    "api-tinvest.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/tinvest",
+      "destination": "/api-tinvest.js"
+    }
+  ]
 }
