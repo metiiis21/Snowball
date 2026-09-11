@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "vite build",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest",
+    "recharts": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20"
+  }
+}
